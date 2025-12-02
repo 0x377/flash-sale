@@ -1,0 +1,20 @@
+# Run all tests
+php artisan test
+
+# Run specific test suites
+php artisan test --testsuite=Unit
+php artisan test --testsuite=Feature
+php artisan test --testsuite=Concurrency
+
+# Run specific test files
+php artisan test tests/Feature/StockHoldTest.php
+php artisan test tests/Concurrency/StockHoldConcurrencyTest.php
+
+# Run with coverage
+php artisan test --coverage --coverage-html=coverage
+
+# Run with specific filter
+php artisan test --filter=test_no_overselling_under_high_concurrency
+
+# Run in parallel
+php artisan test --parallel

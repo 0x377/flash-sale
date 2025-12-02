@@ -1,0 +1,521 @@
+/* Sign in */
+/* Custom CSS for Signin */
+.container-fluid {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+}
+
+.card-title {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.input-group-text {
+  border-right: none;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  border-left: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 0 0.375rem 0.375rem 0 !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.input-group:focus-within .input-group-text {
+  border-color: #667eea;
+  background-color: #e8edff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-dark:hover {
+  transform: translateY(-1px);
+}
+
+/* Social buttons */
+.btn-sm {
+  padding: 8px 16px;
+}
+
+/* Divider styling */
+.position-relative hr {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .container-fluid {
+    padding: 20px;
+  }
+  
+  .d-sm-flex {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+}
+
+/* Loading states */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Form validation styles */
+.is-valid {
+  border-color: #198754 !important;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+}
+
+.form-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+
+/* Sign up */
+.container-fluid {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+}
+
+.card-title {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.input-group-text {
+  border-right: none;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  border-left: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 0 0.375rem 0.375rem 0 !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.input-group:focus-within .input-group-text {
+  border-color: #667eea;
+  background-color: #e8edff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Loading state enhancements */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Form validation styles */
+.is-valid {
+  border-color: #198754 !important;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+}
+
+.form-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .container-fluid {
+    padding: 20px;
+  }
+}
+
+/* Smooth transitions for all interactive elements */
+.form-control,
+.btn,
+.input-group-text {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced focus states for accessibility */
+.form-control:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Link hover effects */
+.text-decoration-none:hover {
+  text-decoration: underline !important;
+}
+
+
+/* Verify Email */
+.code-input-group {
+  gap: 0.5rem;
+}
+
+.code-input {
+  height: 60px;
+  width: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid #dee2e6;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+}
+
+.code-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  transform: translateY(-2px);
+}
+
+.code-input.is-valid {
+  border-color: #198754;
+  background-color: rgba(25, 135, 84, 0.05);
+}
+
+.code-input.is-invalid {
+  border-color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .code-input {
+    height: 50px;
+    width: 45px;
+    font-size: 1.25rem;
+  }
+}
+
+/* Animation for successful verification */
+@keyframes successPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.verification-success {
+  animation: successPulse 0.6s ease-in-out;
+}
+
+/* Loading state for resend button */
+.btn-link:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* Forget Password */
+.container-fluid {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+}
+
+.card-title {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.input-group-text {
+  border-right: none;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  border-left: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 0 0.375rem 0.375rem 0 !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.input-group:focus-within .input-group-text {
+  border-color: #667eea;
+  background-color: #e8edff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Success state styling */
+.text-success {
+  color: #198754 !important;
+}
+
+.alert-info {
+  background-color: rgba(13, 202, 240, 0.1);
+  border-color: rgba(13, 202, 240, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .container-fluid {
+    padding: 20px;
+  }
+}
+
+/* Loading states */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Form validation styles */
+.is-valid {
+  border-color: #198754 !important;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+}
+
+.form-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Link styling */
+.text-decoration-none:hover {
+  text-decoration: underline !important;
+}
+
+
+/* Reset Password */
+.container-fluid {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+}
+
+.card-title {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.input-group-text {
+  border-right: none;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  border-left: none;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 0 0.375rem 0.375rem 0 !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.input-group:focus-within .input-group-text {
+  border-color: #667eea;
+  background-color: #e8edff;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Password strength indicator */
+.progress {
+  background-color: #e9ecef;
+}
+
+/* Toggle password button */
+.btn-outline-secondary {
+  border-color: #dee2e6;
+  border-left: none;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .container-fluid {
+    padding: 20px;
+  }
+}
+
+/* Loading states */
+.btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Form validation styles */
+.is-valid {
+  border-color: #198754 !important;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+}
+
+.form-text {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
